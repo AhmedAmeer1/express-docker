@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: react-app
+  name: express-app
 spec:
   selector:
     matchLabels:
-      app: react-app
+      app: express-app
   replicas: 2
   template:
     metadata:
       labels:
-        app: react-app
+        app: express-app
     spec:
       containers:
         - name: react-app
-          image: gcr.io/kubernetes-project-350417/github.com/ahmedameer1/react-docker
+          image: gcr.io/kubernetes-project-350417/github.com/ahmedameer1/express-docker
           ports:
             - containerPort: 3000

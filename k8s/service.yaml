@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: react-app
+  name: express-app
 spec:
   selector:
-    app: react-app
+    app: express-app
   ports:
     - protocol: TCP
       port: 3000
