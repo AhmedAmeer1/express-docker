@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: express-app
-          image: gcr.io/kubernetes-project-350417/express-app:v1
+          image: gcr.io/kubernetes-project-350417/github.com/ahmedameer1/express-docker
           ports:
             - containerPort: 3000
