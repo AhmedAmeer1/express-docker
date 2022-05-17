@@ -13,7 +13,7 @@ spec:
         app: express-app
     spec:
       containers:
-        - name: react-app
+        - name: express-app
           image: gcr.io/kubernetes-project-350417/express-app:v1
           ports:
             - containerPort: 3000
